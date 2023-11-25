@@ -1,10 +1,10 @@
 function Title() {
   return (
-    <div className="m-10 text-2xl md:text-5xl">
-      <p>구현해보고 싶은게 많은</p>
-      <p>프론트엔드 개발자 이세영입니다.</p>
+    <div className="m-10 text-2xl md:text-3xl lg:text-5xl font-roboto font-bold">
+      <p className="mb-5">- 이세영 -</p>
+      <p>프론트엔드 개발자</p>
     </div>
-  );
+  )
 }
 
-export default Title;
+export default Title

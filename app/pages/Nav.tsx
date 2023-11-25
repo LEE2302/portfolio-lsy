@@ -11,14 +11,14 @@ function Nav() {
   ]
 
   return (
-    <nav className="w-full h-20 flex justify-center fixed top-0 z-50 border border-red-400">
+    <nav className="w-full h-20 flex justify-center fixed top-0 z-50 border border-red-400 font-roboto font-bold">
       <div className="w-full max-w-screen-2xl flex items-center justify-between">
-        <div className="text-3xl capitalize">
-          <Link href={"/"}>이세영 포트폴리오</Link>
+        <div className="text-xl md:text-2xl lg:text-3xl capitalize">
+          <Link href={"/"}>{`LSY's PORTFOLIO`} </Link>
         </div>
         <ul className="flex">
           {navArr.map(el => (
-            <li key={el.name} className="mr-3 text-3xl capitalize hover:text-green-500">
+            <li key={el.name} className="mr-3 text-xl md:text-2xl lg:text-3xl capitalize hover:text-green-500">
               <Link href={el.path}>{el.name}</Link>
             </li>
           ))}
