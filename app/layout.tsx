@@ -1,8 +1,8 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import Nav from "./pages/Nav"
 import Footer from "./pages/Footer"
 import { notoSansKr, roboto } from "./font"
+import Nav from "./pages/Nav"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header>
           <Nav />
         </header>
-        <main className="pt-[80px]">{children}</main>
+        <main>{children}</main>
         <footer>
           <Footer />
         </footer>

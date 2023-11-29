@@ -1,4 +1,17 @@
 @tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-2xl font-bold;
+  }
+  p {
+    @apply my-5 text-xl;
+  }
+  hr {
+    @apply mb-5 border-4 border-black;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -30,19 +43,24 @@ a {
   color: inherit;
 }
 
-.image-box img {
+/* .image-box img {
   width: 250px;
   height: 300px;
-}
+} */
 
 #url-path {
   color: #3494dd;
 }
 
-/* #carousel-content {
-  img {
-    max-width: 72rem;
-    min-width: 72rem;
-    height: 700px;
+#intro {
+  &::before {
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
   }
-} */
+}

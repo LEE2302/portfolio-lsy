@@ -1,8 +1,8 @@
-import About from './pages/About'
-import Skills from './pages/Skills'
-import Introduce from './pages/Introduce'
-import Projects from './pages/Projects'
-import Archiving from './pages/Archiving'
+import About from "./pages/About"
+import Skills from "./pages/Skills"
+import Introduce from "./pages/Introduce"
+import Projects from "./pages/Projects"
+import Archiving from "./pages/Archiving"
 
 export default function Home() {
   return (
