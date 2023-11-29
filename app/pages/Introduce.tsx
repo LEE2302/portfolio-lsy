@@ -15,8 +15,8 @@ function Introduce() {
           <Content />
         </div>
       </div>
-      <div className="text-white text-4xl flex flex-col justify-center items-center">
-        <p>더 알아보기</p>
+      <div className="text-white md:text-3xl lg:text-5xl flex flex-col justify-center items-center mouse-animation">
+        <p className="md:text-xl lg:text-3xl mb-2">더 알아보기</p>
         <BsMouse />
       </div>
     </section>
