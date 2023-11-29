@@ -36,7 +36,7 @@ function Carousel({ children: slides }: Props) {
         </div>
       </div>
       {/* 밑에 보여주는 div */}
-      <div className="absolute bottom-4 right-0 left-0">
+      <div className="absolute bottom-4 right-0 left-0 z-[15]">
         <div className="flex items-center justify-center gap-2">
           {slides.map((_, i) => (
             <div

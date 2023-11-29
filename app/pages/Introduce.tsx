@@ -1,5 +1,6 @@
 import Content from "@/components/introduce/Content"
 import IntroTitle from "@/components/introduce/IntroTitle"
+import { BsMouse } from "react-icons/bs"
 // import Image from "next/image"
 
 function Introduce() {
@@ -13,6 +14,10 @@ function Introduce() {
           <IntroTitle />
           <Content />
         </div>
+      </div>
+      <div className="text-white text-4xl flex flex-col justify-center items-center">
+        <p>더 알아보기</p>
+        <BsMouse />
       </div>
     </section>
   )

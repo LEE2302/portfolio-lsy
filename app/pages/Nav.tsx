@@ -26,7 +26,7 @@ function Nav() {
 
   return (
     <nav
-      className={`w-full h-20 flex justify-center fixed top-0 z-10 font-roboto font-bold  ${
+      className={`w-full h-20 flex justify-center fixed top-0 z-20 font-roboto font-bold  ${
         scrollPosition ? "bg-white " : "text-white/50"
       }`}
     >
