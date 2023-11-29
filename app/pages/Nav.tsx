@@ -36,7 +36,7 @@ function Nav() {
     >
       <div className="w-full max-w-screen-2xl flex items-center justify-between">
         <div
-          className={`text-xl md:text-2xl lg:text-3xl capitalize  ${
+          className={`text-xl md:text-2xl lg:text-3xl capitalize ml-4 ${
             scrollPosition ? "hover:text-[#B31312]" : "hover:text-white"
           }`}
         >
