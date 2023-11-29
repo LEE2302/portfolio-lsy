@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 function Nav() {
   const navArr = [
@@ -13,15 +13,19 @@ function Nav() {
 
   // 네브바 스크롤 파악하기 위한 코드
   const [scrollPosition, setScrollPosition] = useState(false)
+  console.log(scrollPosition)
 
-  document.addEventListener("scroll", () => {
-    const scrollY = window.scrollY
-    // y축(세로)으로 스크롤범위가 100px이 넘으면 true 안되면 false
-    if (scrollY >= 100) {
-      setScrollPosition(true)
-    } else {
-      setScrollPosition(false)
-    }
+  // document not defined라는 에러를 뱉었다 => next ssr때문이라는 그를 봤고 useEffect로 감싸줌
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      const scrollY = window.scrollY
+      // y축(세로)으로 스크롤범위가 100px이 넘으면 true 안되면 false
+      if (scrollY >= 100) {
+        setScrollPosition(true)
+      } else {
+        setScrollPosition(false)
+      }
+    })
   })
 
   return (
@@ -42,7 +46,7 @@ function Nav() {
           {navArr.map(el => (
             <li
               key={el.name}
-              className={`mr-5 text-xl md:text-2xl lg:text-3xl capitalize hover:text-white ${
+              className={`mr-5 text-xl md:text-2xl lg:text-3xl capitalize ${
                 scrollPosition ? "hover:text-[#B31312]" : "hover:text-white"
               }`}
             >
