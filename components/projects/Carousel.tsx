@@ -18,7 +18,7 @@ function Carousel({ children: slides }: Props) {
   return (
     <div className="w-[36rem] md:w-[50rem] lg:w-[72rem] bg-black flex justify-center rounded-lg relative">
       {/* 버튼 div */}
-      <div className="absolute inset-0 flex justify-between items-center p-4">
+      <div className="absolute inset-0 flex justify-between items-center z-10 p-4">
         <button onClick={prev} className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white">
           <FaArrowLeft />
         </button>
