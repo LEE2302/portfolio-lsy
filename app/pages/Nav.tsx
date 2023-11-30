@@ -1,19 +1,12 @@
 "use client"
 
-import Link from "next/link"
+import HeaderList from "@/components/navbar/HeaderList"
+import Logo from "@/components/navbar/Logo"
 import { useEffect, useState } from "react"
 
 function Nav() {
-  const navArr = [
-    { name: "About", path: "#about" },
-    { name: "Archiving", path: "#archiving" },
-    { name: "Skills", path: "#skills" },
-    { name: "Projects", path: "#projects" },
-  ]
-
   // 네브바 스크롤 파악하기 위한 코드
   const [scrollPosition, setScrollPosition] = useState(false)
-  console.log(scrollPosition)
 
   // document not defined라는 에러를 뱉었다 => next ssr때문이라는 그를 봤고 useEffect로 감싸줌
   useEffect(() => {
@@ -30,30 +23,13 @@ function Nav() {
 
   return (
     <nav
-      className={`w-full h-20 flex justify-center fixed top-0 z-20 font-roboto font-bold  ${
+      className={`w-full h-20 fixed top-0 z-50 flex justify-center font-roboto font-bold  ${
         scrollPosition ? "bg-white " : "text-white/50"
       }`}
     >
-      <div className="w-full max-w-screen-2xl flex items-center justify-between">
-        <div
-          className={`text-xl md:text-2xl lg:text-3xl capitalize ml-4 ${
-            scrollPosition ? "hover:text-[#B31312]" : "hover:text-white"
-          }`}
-        >
-          <Link href={"/"}>{`LSY's PORTFOLIO`} </Link>
-        </div>
-        <ul className="flex">
-          {navArr.map(el => (
-            <li
-              key={el.name}
-              className={`mr-5 text-xl md:text-2xl lg:text-3xl capitalize ${
-                scrollPosition ? "hover:text-[#B31312]" : "hover:text-white"
-              }`}
-            >
-              <Link href={el.path}>{el.name}</Link>
-            </li>
-          ))}
-        </ul>
+      <div className="w-full max-w-6xl flex items-center justify-between">
+        <Logo scrollPosition={scrollPosition} />
+        <HeaderList scrollPosition={scrollPosition} />
       </div>
     </nav>
   )

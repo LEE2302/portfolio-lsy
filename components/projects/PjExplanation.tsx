@@ -19,7 +19,7 @@ function PjExplanation({ mdContent, linksArr }: Props) {
             key={el.value}
             href={el.link}
             target="_blank"
-            className="bg-black text-white mr-5 p-4 rounded-lg text-xl"
+            className="bg-black text-white mr-5 p-4 rounded-lg text-sm md:text-xl"
           >
             {el.value}
           </Link>

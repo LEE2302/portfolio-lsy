@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="kr" className={`${notoSansKr.variable} ${roboto.variable}`}>
-      <body>
-        <header>
+      <body className="w-full h-full box-border">
+        <header className="flex items-center justify-center">
           <Nav />
         </header>
         <main>{children}</main>
