@@ -12,7 +12,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         // Introduce.tsx에서 사용 ex) bg-intro-image
-        "intro-image": "url('/images/intro/introbackground.jpg')",
+        "intro-bg-image": "url('/images/intro/introbackground.jpg')",
       },
       // 폰트 패밀리 => 폰트 적용 ex) font-roboto
       fontFamily: {

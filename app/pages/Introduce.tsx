@@ -4,7 +4,10 @@ import { BsMouse } from "react-icons/bs"
 
 function Introduce() {
   return (
-    <section id="intro" className="w-full h-[600px] text-center pt-[80px] bg-intro-image bg-cover bg-center relative">
+    <section
+      id="intro"
+      className="w-full h-[600px] text-center pt-[80px] bg-intro-bg-image bg-cover bg-center relative"
+    >
       <div className="p-10 flex justify-center items-center relative text-white">
         <div>
           <IntroTitle />
