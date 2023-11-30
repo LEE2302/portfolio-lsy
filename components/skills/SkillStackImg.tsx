@@ -1,13 +1,19 @@
+// import PortfolioContext from "@/context/context";
+// import { useContext } from "react";
 import Image from "next/image"
 
 function SkillStackImg() {
+  // const { prefix } = useContext(PortfolioContext);
+  
   return (
     <div className="flex items-center md:flex-row flex-col">
       <div className="bg-white  md:mr-5 mb-5 p-5 rounded-lg">
-        <Image src="/images/skills/skill-left.png" alt="skill" width={300} height={400} />
+        {/* <Image src={`${prefix}/images/skills/skill-left.png`} alt="skill" width={300} height={400} /> */}
+        <Image src={`/images/skills/skill-left.png`} alt="skill" width={300} height={400} />
       </div>
       <div className="bg-white md:ml-5 mt-5 p-5 rounded-lg">
-        <Image src="/images/skills/skill-right.png" alt="skill" width={300} height={400} />
+        {/* <Image src={`${prefix}/images/skills/skill-right.png`} alt="skill" width={300} height={400} /> */}
+        <Image src={`/images/skills/skill-right.png`} alt="skill" width={300} height={400} />
       </div>
     </div>
   )

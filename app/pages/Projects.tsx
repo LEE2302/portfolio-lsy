@@ -23,7 +23,7 @@ function Projects() {
         <Carousel>
           {imageSrcPathArr.map(path => (
             // flex-shrink-0을 통해서 원본크기 그대로 유지 => flex-row시에는 넓이에 맞추려 하기때문에 좁아지기 때문.
-            <Image key={path} src={path} alt="gif" width={600} height={500} className="flex-shrink-0" />
+            <Image key={path} src={`${path}`} alt="gif" width={600} height={500} className="flex-shrink-0" />
           ))}
         </Carousel>
         {/* 프로젝트 소개 */}
