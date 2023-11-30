@@ -27,7 +27,7 @@ function Carousel({ children: slides }: Props) {
         </button>
       </div>
       {/* 칠드런 => 슬라이드 */}
-      <div className="flex overflow-hidden w-[600px] md:h-[500px]">
+      <div className="flex overflow-hidden w-[600px] h-[280px] md:h-[500px]">
         <div
           className="flex transition-transform ease-out duration-500"
           style={{ transform: `translateX(-${curr * 100}%)` }}
