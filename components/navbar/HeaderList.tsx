@@ -9,6 +9,8 @@ interface Props {
 }
 
 function HeaderList({ scrollPosition, isdropMenu, setIsDropMenu }: Props) {
+  console.log(scrollPosition, isdropMenu)
+
   // 각각 네브바 목록 배열
   const navArr = [
     { name: "About", path: "#about" },
@@ -40,7 +42,7 @@ function HeaderList({ scrollPosition, isdropMenu, setIsDropMenu }: Props) {
                 ? "hover:text-white hover:bg-[#B31312] h-10 mr-0 flex justify-center items-center"
                 : "hover:text-[#B31312]"
               : isdropMenu
-                ? "hover:text-white hover:bg-[#B31312] h-10 mr-0 flex justify-center items-center"
+                ? "hover:text-white hover:bg-[#B31312] h-10 mr-0 flex justify-center items-center text-black"
                 : "hover:text-white"
           }`}
         >

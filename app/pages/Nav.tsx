@@ -39,7 +39,7 @@ function Nav() {
         <HeaderList scrollPosition={scrollPosition} isdropMenu={isdropMenu} setIsDropMenu={setIsDropMenu} />
         <button
           className={`mr-5 z-10 block md:hidden ${
-            scrollPosition ? "hover:text-[#B31312]" : isdropMenu ? "hover:text-[#B31312]" : "hover:text-white"
+            scrollPosition ? "hover:text-[#B31312]" : isdropMenu ? "hover:text-[#B31312] text-black" : "hover:text-white"
           }`}
           onClick={dropMenuHandler}
         >
