@@ -3,7 +3,8 @@ import path from "path"
 
 const projectMdDir = path.join(process.cwd(), "md")
 
-function getProjectMd(fileName: string) {
+// 각각 파일이름으로 데이터 가져오기
+export function getProjectMd(fileName: string) {
   const filePath = path.join(projectMdDir, fileName)
 
   const fileContent = fs.readFileSync(filePath, "utf-8")
@@ -11,6 +12,7 @@ function getProjectMd(fileName: string) {
   return fileContent
 }
 
+// 모든 .md파일 읽어오기
 export function getAllProjectMd() {
   const mdFiles = fs.readdirSync(projectMdDir)
 
@@ -20,5 +22,3 @@ export function getAllProjectMd() {
 
   return allProjectMd
 }
-
-

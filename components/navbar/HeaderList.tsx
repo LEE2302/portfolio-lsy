@@ -9,8 +9,6 @@ interface Props {
 }
 
 function HeaderList({ scrollPosition, isdropMenu, setIsDropMenu }: Props) {
-  console.log(scrollPosition, isdropMenu)
-
   // 각각 네브바 목록 배열
   const navArr = [
     { name: "About", path: "#about" },

@@ -1,4 +1,4 @@
-import { getAllProjectMd } from "@/util/project-md"
+import { getProjectMd } from "@/util/project-md"
 
 //  친환경 데이터
 export const imageSrcPathArr = [
@@ -13,7 +13,8 @@ export const imageSrcPathArr = [
   "/images/projects/myecostory/eco9.gif",
 ]
 
-export const myEcoStoryContent = getAllProjectMd()[1]
+// export const myEcoStoryContent = getAllProjectMd()[1]
+export const myEcoStoryContent = getProjectMd("myecostorymd.md")
 
 export const ecoLinkArr = [
   {
@@ -47,7 +48,7 @@ export const imageMoYoungArr = [
   "/images/projects/moyoung/moyoung13.png",
 ]
 
-export const moyoungContent = getAllProjectMd()[0]
+export const moyoungContent = getProjectMd("moyoungmd.md")
 
 export const moyoungLinkArr = [
   {
@@ -60,6 +61,31 @@ export const moyoungLinkArr = [
   },
   {
     link: "http://moyoung-toy-project.s3-website.ap-northeast-2.amazonaws.com/",
+    value: "배포 링크",
+  },
+]
+
+// 모영 데이터
+export const imagePortfolioArr = [
+  "/images/projects/portfolio/pofol1.png",
+  "/images/projects/portfolio/pofol2.png",
+  "/images/projects/portfolio/pofol3.png",
+  "/images/projects/portfolio/pofol4.png",
+]
+
+export const portfolioContent = getProjectMd("portfoliomd.md")
+
+export const portfolioLinkArr = [
+  {
+    link: "https://velog.io/@lee2302/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4",
+    value: "회고 블로그",
+  },
+  {
+    link: "https://github.com/LEE2302/portfolio-lsy",
+    value: "GitHub",
+  },
+  {
+    link: "https://portfolio-lsy.vercel.app/",
     value: "배포 링크",
   },
 ]
