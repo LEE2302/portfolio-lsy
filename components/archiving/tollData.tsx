@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa"
 import { SiVelog } from "react-icons/si"
-import { FaRegFilePdf } from "react-icons/fa6"
+// import { FaRegFilePdf } from "react-icons/fa6"
 
 export const iconArr = [
   {
@@ -30,16 +30,16 @@ export const iconArr = [
       </p>
     ),
   },
-  {
-    icon: <FaRegFilePdf size="50" />,
-    name: "이력서.pdf",
-    value: ["제가 개발자가 되기 위해 걸어온 이력을 기록해둔 pdf파일입니다."],
-    urlPath: "",
-    path: "이력서.pdf",
-    des: (
-      <p>
-        <b>이력서</b>입니다.
-      </p>
-    ),
-  },
+  // {
+  //   icon: <FaRegFilePdf size="50" />,
+  //   name: "이력서.pdf",
+  //   value: ["제가 개발자가 되기 위해 걸어온 이력을 기록해둔 pdf파일입니다."],
+  //   urlPath: "",
+  //   path: "이력서.pdf",
+  //   des: (
+  //     <p>
+  //       <b>이력서</b>입니다.
+  //     </p>
+  //   ),
+  // },
 ]

@@ -4,11 +4,11 @@ import { iconArr } from "./tollData"
 
 function Tool() {
   return (
-    <div className="w-full flex flex-col justify-between items-center lg:flex-row">
+    <div className="w-full flex flex-col justify-center items-center lg:flex-row">
       {iconArr.map(el => (
         <Link
           key={el.name}
-          href={el.path}
+          href={el.urlPath}
           target="_blank"
           className="cursor-pointer w-[290px] md:w-[450px] xl:w-1/3 h-auto lg:h-[400px] xl: m-5 p-5 rounded-lg bg-white"
         >
