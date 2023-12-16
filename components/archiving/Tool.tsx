@@ -10,7 +10,7 @@ function Tool() {
           key={el.name}
           href={el.urlPath}
           target="_blank"
-          className="cursor-pointer w-[290px] md:w-[450px] xl:w-1/3 h-auto lg:h-[400px] xl: m-5 p-5 rounded-lg bg-white"
+          className="cursor-pointer w-[290px] md:w-[480px] xl:w-1/3 h-auto lg:h-[400px] xl: m-5 p-5 rounded-lg bg-white hover:scale-105 hover:ease-in hover:duration-300"
         >
           <div>
             <div className="flex items-center gap-3 mb-5">
@@ -23,7 +23,7 @@ function Tool() {
             <div className="lg:text-lg xl:text-xl mt-5">{el.des}</div>
             <ul className="mt-5 pl-5">
               {el.value.map(el => (
-                <li key={el} className=" lg:text-lg xl:text-xl text-lg mb-5 list-disc font-sanskr font-normal">
+                <li key={el} className=" lg:text-lg xl:text-xl text-lg mb-2 list-disc font-sanskr font-normal">
                   {el}
                 </li>
               ))}
