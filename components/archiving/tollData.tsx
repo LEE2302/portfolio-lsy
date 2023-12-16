@@ -25,7 +25,7 @@ export const iconArr = [
     value: [
       "부트캠프와 영상강의를 통해 학습한 내용을 정리합니다.",
       "팀/개인 프로젝트를 하며 어려웠던 내용과 새로 학습한 내용을 정리하며, 회고도 작성하고 있습니다.",
-      "Javascript와 React에 내용이 주를 이루고 있습니다.",
+      "Javascript와 React의 내용이 주를 이루고 있습니다.",
     ],
     urlPath: "https://velog.io/@lee2302",
     path: "velog.io/@lee2302",
