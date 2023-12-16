@@ -7,7 +7,7 @@ function SkillStackImg() {
 
   return (
     <div className="flex items-center justify-center md:flex-row flex-col">
-      <div className="bg-white  md:mr-5 p-5 rounded-lg hover:scale-105 hover:ease-in hover:duration-300">
+      <div className="bg-white  md:mr-5 md:mb-0 mb-5 p-5 rounded-lg hover:scale-105 hover:ease-in hover:duration-300">
         {/* <Image src={`${prefix}/images/skills/skill-left.png`} alt="skill" width={300} height={400} /> */}
         <Image src={`/images/skills/skill-left.png`} alt="skill" width={300} height={400} />
       </div>
