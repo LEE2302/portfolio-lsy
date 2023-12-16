@@ -15,6 +15,7 @@ export function getProjectMd(fileName: string) {
 // 모든 .md파일 읽어오기
 export function getAllProjectMd() {
   const mdFiles = fs.readdirSync(projectMdDir)
+  console.log(mdFiles)
 
   const allProjectMd = mdFiles.map(nameFile => {
     return getProjectMd(nameFile)

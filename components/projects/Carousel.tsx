@@ -16,7 +16,7 @@ function Carousel({ children: slides }: Props) {
   const next = () => setCurr(curr => (curr === slides.length - 1 ? 0 : curr + 1))
 
   return (
-    <div className="w-[20rem] md:w-[50rem] max-w-[72rem] bg-black flex justify-center rounded-lg relative">
+    <div className="h-[280px] w-[20rem] md:w-[35rem] mt-10 sm:mr-3 lg:h-[500px] lg:w-[50rem] max-w-[72rem] bg-black flex justify-center items-center rounded-lg relative">
       {/* 버튼 div */}
       <div className="absolute inset-0 flex justify-between items-center z-10 p-4">
         <button onClick={prev} className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white">
@@ -27,7 +27,7 @@ function Carousel({ children: slides }: Props) {
         </button>
       </div>
       {/* 칠드런 => 슬라이드 */}
-      <div className="flex overflow-hidden w-[600px] h-[280px] md:h-[500px]">
+      <div className="flex overflow-hidden w-[300px] sm:w-[400px] lg:w-[600px] h-[280px] sm:-h[320px] lg:h-[500px]">
         <div
           className="flex transition-transform ease-out duration-500"
           style={{ transform: `translateX(-${curr * 100}%)` }}

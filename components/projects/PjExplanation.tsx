@@ -11,7 +11,7 @@ interface Props {
 
 function PjExplanation({ mdContent, linksArr }: Props) {
   return (
-    <article className="prose text-black/60 border-black max-w-6xl mt-10 text-sm md:text-lg break-keep">
+    <article className="prose text-black/60 border-black max-w-6xl mt-10 text-xs md:text-sm break-keep">
       <ReactMarkdown>{mdContent}</ReactMarkdown>
       <div>
         {linksArr.map(el => (
