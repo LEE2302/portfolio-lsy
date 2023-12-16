@@ -6,7 +6,11 @@ export const iconArr = [
   {
     icon: <FaGithub size="50" />,
     name: "GitHub",
-    value: ["알고리즘과 각종 프로젝트를 진행한 코드가 있습니다.", "강의를 보며 공부한 코드를 올립니다."],
+    value: [
+      "프로그래머스 사이트에서 푼 알고리즘 문제를 구글 extension을 통해 commit을 하고 있습니다.",
+      "협업 프로젝트를 저장하고 있으며 Readme를 보기 좋게 작성하려 합니다.",
+      "영상 강의를 통해 배운 프로젝트와 혼자 진행한 프로젝트를 저장하고 있습니다.",
+    ],
     urlPath: "https://github.com/LEE2302",
     path: "github.com/LEE2302",
     des: (
@@ -19,14 +23,15 @@ export const iconArr = [
     icon: <SiVelog size="50" color="#20C997" />,
     name: "VELOG",
     value: [
-      "부트캠프와 개인 강의를 통하여 배운 새로운 내용을 기록합니다.",
-      "팀 프로젝트를 통해 얻은 느낀점과 배운 내용을 회고록을 통해 기록합니다.",
+      "부트캠프와 영상강의를 통해 학습한 내용을 정리합니다.",
+      "팀/개인 프로젝트를 하며 어려웠던 내용과 새로 학습한 내용을 정리하며, 회고도 작성하고 있습니다.",
+      "Javascript와 React에 내용이 주를 이루고 있습니다.",
     ],
     urlPath: "https://velog.io/@lee2302",
     path: "velog.io/@lee2302",
     des: (
       <p>
-        <b>기억하고 싶은 내용들을 기록하는 블로그</b>입니다.
+        <b>학습한 내용들을 기록하는 블로그</b>입니다.
       </p>
     ),
   },
