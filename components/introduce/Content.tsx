@@ -1,9 +1,8 @@
 function Content() {
   return (
     <div className="m-10 text-xs md:text-2xl break-keep">
-      <p className="text-xs md:text-2xl">구현해보고 싶은게 많습니다.</p>
-      <p className="text-xs md:text-2xl">도전을 피하지 않고 즐깁니다.</p>
-      <p className="text-xs md:text-2xl">절망보단 성취감을 바라보며 나아갑니다.</p>
+      <p className="text-xs md:text-2xl">지속적으로 성장하는 개발자입니다.</p>
+      <p className="text-xs md:text-2xl">어제보다 나은 오늘을 위해 매 순간 최선을 다합니다.</p>
     </div>
   )
 }
