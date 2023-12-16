@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   title: "Seyoung's Portfolio",
   description: "신입 개발자 이세영의 포트폴리오 페이지 입니다.",
   icons: {
-    icon: '/images/favicon.ico'
-  }
+    icon: "/images/favicon.ico",
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -20,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Nav />
         </header>
         <main>{children}</main>
+        <div id="project-modal"></div>
         <footer>
           <Footer />
         </footer>

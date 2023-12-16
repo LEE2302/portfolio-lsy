@@ -5,6 +5,8 @@
 
 - 팀원: 프론트엔드 3명, 백엔드 3명
 
+[핵심 기능구현]
+
 부트캠프에서 진행한 메인프로젝트이며 백엔드와 프론트엔드 각 3명씩 조를 이루어 진행을 했습니다.
 **백엔드와 협업**을 하며 **Restful API**에 대해 이해를 하는 시간이 되었고, 프론트엔드 팀원들과 진행을 하며 개발 환경을 맞추고 **Git에 대해 이해**를 넓이는 시간이 되었습니다.
 
@@ -14,6 +16,6 @@
 
 ## 기술 스택 & 툴
 
-React, JavaScript, TypeScript, Styled-Components, Vite, Quill-editor, Axios, Redux, Eslint, Prettier, AWS-S3
+React, JavaScript, TypeScript, Styled-Components, Vite, Quill-editor, Axios, Redux, ESlint, Prettier, AWS-S3
 
 ---

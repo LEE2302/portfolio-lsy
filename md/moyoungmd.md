@@ -14,6 +14,6 @@
 
 ## 기술 스택 & 툴
 
-React, JavaScript, TypeScript, Axios, Styled-Components, Vite, React-hook-form, Redux, Eslint, Prettier, AWS-S3
+React, JavaScript, TypeScript, Axios, Styled-Components, Vite, React-hook-form, Redux, ESlint, Prettier, AWS-S3
 
 ---

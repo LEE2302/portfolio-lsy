@@ -5,7 +5,7 @@
     @apply text-2xl font-bold;
   }
   hr {
-    @apply mb-5 border-4 border-black;
+    @apply border-4;
   }
 }
 
@@ -75,4 +75,19 @@ a {
 
 .mouse-animation {
   animation: intromouse 1s infinite alternate;
+}
+
+@keyframes clickmouse {
+  0% {
+    opacity: 1;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.click-animation {
+  animation: clickmouse 1s infinite alternate;
 }
