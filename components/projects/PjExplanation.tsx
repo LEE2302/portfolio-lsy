@@ -4,18 +4,30 @@ import Link from "next/link"
 import ReactMarkdown from "react-markdown"
 import { FaRegHandPointLeft } from "react-icons/fa6"
 import ProjectModal from "../modal/ProjectModal"
-import { useState } from "react"
+import { useState, useRef } from "react"
 
 interface Props {
   mdContent: string
+  mdReadme: string
   linksArr: {
     link: string
     value: string
   }[]
 }
 
-function PjExplanation({ mdContent, linksArr }: Props) {
+function PjExplanation({ mdContent, mdReadme, linksArr }: Props) {
+  const modalRef = useRef<HTMLDivElement>(null)
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
+
+  // 모달 밖 영역 클릭시 닫기 함수
+  function modalOutSideClick(e: React.MouseEvent<HTMLDivElement>) {
+    // ref와 이벤트 타겟을 활용한 방법
+    // ref.current와 e.target은 동일한 곳에 주면 그곳을 클릭했을시 동일하기 때문에 그 조건으로 처리
+
+    if (modalRef.current === e.target) {
+      setIsModalOpen(false)
+    }
+  }
 
   return (
     <article className="prose text-black/60 border-black max-w-6xl mt-10 text-xs md:text-sm break-keep">
@@ -53,8 +65,10 @@ function PjExplanation({ mdContent, linksArr }: Props) {
         onClose={() => {
           setIsModalOpen(false)
         }}
+        modalRef={modalRef}
+        modalOutSideClick={modalOutSideClick}
       >
-        여기에 이제 리드미 내용
+        <ReactMarkdown>{mdReadme}</ReactMarkdown>
       </ProjectModal>
     </article>
   )

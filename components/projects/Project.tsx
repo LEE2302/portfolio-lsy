@@ -8,13 +8,14 @@ interface Props {
   info: string
   imagePathArr: string[]
   mdContent: string
+  mdReadme: string
   linkArr: {
     link: string
     value: string
   }[]
 }
 
-function Project({ title, info, imagePathArr, mdContent, linkArr }: Props) {
+function Project({ title, info, imagePathArr, mdContent, mdReadme, linkArr }: Props) {
   return (
     <div className="bg-white p-10 max-w-2xl md:max-w-4xl lg:max-w-7xl h-auto flex flex-col items-center mb-20 rounded-xl ">
       <ProjectTitle title={title} info={info} />
@@ -27,7 +28,7 @@ function Project({ title, info, imagePathArr, mdContent, linkArr }: Props) {
           ))}
         </Carousel>
         {/* 프로젝트 소개 */}
-        <PjExplanation mdContent={mdContent} linksArr={linkArr} />
+        <PjExplanation mdContent={mdContent} mdReadme={mdReadme} linksArr={linkArr} />
       </div>
     </div>
   )

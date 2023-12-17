@@ -11,6 +11,9 @@ import {
   myEcoStoryContent,
   portfolioContent,
   portfolioLinkArr,
+  myEcoStoryReadme,
+  moyoungReadme,
+  portfolioReadme,
 } from "@/data/projects/projectsData"
 
 function Projects() {
@@ -22,6 +25,7 @@ function Projects() {
         info="2023.05 | 6인 프로젝트"
         imagePathArr={imageSrcPathArr}
         mdContent={myEcoStoryContent}
+        mdReadme={myEcoStoryReadme}
         linkArr={ecoLinkArr}
       />
       <Project
@@ -29,6 +33,7 @@ function Projects() {
         info="2023.07 | 4인 프로젝트"
         imagePathArr={imageMoYoungArr}
         mdContent={moyoungContent}
+        mdReadme={moyoungReadme}
         linkArr={moyoungLinkArr}
       />
       <Project
@@ -36,6 +41,7 @@ function Projects() {
         info="2023.11 | 1인 프로젝트"
         imagePathArr={imagePortfolioArr}
         mdContent={portfolioContent}
+        mdReadme={portfolioReadme}
         linkArr={portfolioLinkArr}
       />
     </section>

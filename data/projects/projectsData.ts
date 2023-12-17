@@ -14,7 +14,10 @@ export const imageSrcPathArr = [
 ]
 
 // export const myEcoStoryContent = getAllProjectMd()[1]
+// 콘텐츠 내용
 export const myEcoStoryContent = getProjectMd("myecostorymd.md")
+// 자세히 보기 내용
+export const myEcoStoryReadme = getProjectMd("myecostoryReadme.md")
 
 export const ecoLinkArr = [
   {
@@ -48,7 +51,10 @@ export const imageMoYoungArr = [
   "/images/projects/moyoung/moyoung13.png",
 ]
 
+// 콘텐츠 내용
 export const moyoungContent = getProjectMd("moyoungmd.md")
+// 자세히 보기 내용
+export const moyoungReadme = getProjectMd("moyoungReadme.md")
 
 export const moyoungLinkArr = [
   {
@@ -73,7 +79,10 @@ export const imagePortfolioArr = [
   "/images/projects/portfolio/pofol4.png",
 ]
 
+// 콘텐츠 내용
 export const portfolioContent = getProjectMd("portfoliomd.md")
+// 자세히 보기 내용
+export const portfolioReadme = getProjectMd("portfolioReadme.md")
 
 export const portfolioLinkArr = [
   {
