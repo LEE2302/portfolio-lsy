@@ -20,7 +20,7 @@ function ProjectModal({ open, onClose, modalRef, modalOutSideClick, children }: 
         ref={modalRef}
         onClick={e => modalOutSideClick(e)}
       />
-      <div className="w-[1000px] h-[80%] overflow-scroll fixed top-[50%] left-[50%] p-[20px] bg-white z-50 translate-x-[-50%] translate-y-[-50%]">
+      <div className="prose max-w-[1032px] w-[1032px] h-[80%] overflow-scroll fixed top-[50%] left-[50%] p-[20px] bg-white z-50 translate-x-[-50%] translate-y-[-50%]">
         <button onClick={onClose}>모달 닫기</button>
         {children}
       </div>
