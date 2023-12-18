@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import ReactMarkdown from "react-markdown"
 import { FaRegHandPointLeft } from "react-icons/fa6"
 import ProjectModal from "../modal/ProjectModal"
 import { useState, useRef } from "react"
@@ -32,7 +31,6 @@ function PjExplanation({ mdContent, mdReadme, linksArr }: Props) {
 
   return (
     <article className="prose text-black/60 border-black max-w-6xl mt-10 text-xs md:text-sm break-keep">
-      {/* <ReactMarkdown>{mdContent}</ReactMarkdown> */}
       <Markdown text={mdContent} />
       <div className="mb-10 flex items-center">
         <button
