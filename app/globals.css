@@ -91,3 +91,18 @@ a {
 .click-animation {
   animation: clickmouse 1s infinite alternate;
 }
+
+/* modal scroll bar - css속성 */
+.box1::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+/* 스크롤바 막대 설정*/
+.box1::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+
+  /* 스크롤을 적용할 영역 색깔과 border 색상을 똑같이 맞춘다 */
+  border: 7px solid white;
+}

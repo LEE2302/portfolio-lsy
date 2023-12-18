@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown"
 import { FaRegHandPointLeft } from "react-icons/fa6"
 import ProjectModal from "../modal/ProjectModal"
 import { useState, useRef } from "react"
+import Markdown from "../markdowns/Markdown"
 
 interface Props {
   mdContent: string
@@ -31,7 +32,8 @@ function PjExplanation({ mdContent, mdReadme, linksArr }: Props) {
 
   return (
     <article className="prose text-black/60 border-black max-w-6xl mt-10 text-xs md:text-sm break-keep">
-      <ReactMarkdown>{mdContent}</ReactMarkdown>
+      {/* <ReactMarkdown>{mdContent}</ReactMarkdown> */}
+      <Markdown text={mdContent} />
       <div className="mb-10 flex items-center">
         <button
           className="bg-black text-white mr-5 p-4 rounded-lg text-sm md:text-xl"
@@ -68,7 +70,8 @@ function PjExplanation({ mdContent, mdReadme, linksArr }: Props) {
         modalRef={modalRef}
         modalOutSideClick={modalOutSideClick}
       >
-        <ReactMarkdown>{mdReadme}</ReactMarkdown>
+        {/* 마크다운 컴포넌트 */}
+        <Markdown text={mdReadme} />
       </ProjectModal>
     </article>
   )
