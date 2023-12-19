@@ -4,6 +4,7 @@ import HeaderList from "@/components/navbar/HeaderList"
 import Logo from "@/components/navbar/Logo"
 import { useEffect, useState } from "react"
 import { IoIosMenu } from "react-icons/io"
+import { BsArrowUpSquareFill } from "react-icons/bs"
 
 function Nav() {
   // 네브바 스크롤 파악하기 위한 코드
@@ -28,6 +29,12 @@ function Nav() {
     setIsDropMenu(!isdropMenu)
   }
 
+  // 클릭시 맨 위로 올라가기
+  function MoveToTop() {
+    // top:0 >> 맨위로  behavior:smooth >> 부드럽게 이동할수 있게 설정하는 속성
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
   return (
     <nav
       className={`w-full h-20 fixed top-0 z-50 flex justify-center font-roboto font-bold ${
@@ -39,13 +46,23 @@ function Nav() {
         <HeaderList scrollPosition={scrollPosition} isdropMenu={isdropMenu} setIsDropMenu={setIsDropMenu} />
         <button
           className={`mr-5 z-10 block md:hidden ${
-            scrollPosition ? "hover:text-[#B31312]" : isdropMenu ? "hover:text-[#B31312] text-black" : "hover:text-white"
+            scrollPosition
+              ? "hover:text-[#B31312]"
+              : isdropMenu
+                ? "hover:text-[#B31312] text-black"
+                : "hover:text-white"
           }`}
           onClick={dropMenuHandler}
         >
           <IoIosMenu size="30" />
         </button>
       </div>
+      <button
+        className={`${scrollPosition ? "uparrow-animation fixed top-[90%] right-[5%] text-4xl block" : "hidden"}`}
+        onClick={MoveToTop}
+      >
+        <BsArrowUpSquareFill color="#84cc16" />
+      </button>
     </nav>
   )
 }

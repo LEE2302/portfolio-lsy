@@ -20,7 +20,7 @@ function ProjectModal({ open, onClose, modalRef, modalOutSideClick, children }: 
         ref={modalRef}
         onClick={e => modalOutSideClick(e)}
       />
-      <div className="scroll box1 prose max-w-[1032px] w-[1032px] h-[80%] overflow-y-scroll fixed top-[50%] left-[50%] p-[50px] bg-white z-50 translate-x-[-50%] translate-y-[-50%] rounded-md">
+      <div className="scroll box1 prose max-w-[1032px] w-[1032px] h-[80%] overflow-y-scroll break-keep fixed top-[50%] left-[50%] p-[50px] bg-white z-50 translate-x-[-50%] translate-y-[-50%] rounded-md">
         <div>
           <button onClick={onClose}>모달 닫기</button>
         </div>
