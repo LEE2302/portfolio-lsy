@@ -1,6 +1,6 @@
 # 📌 프로젝트 소개 & 설명
 
-## 모영은 영화검색을 통해 상영중인 근처 영화관을 찾아주는 [검색 플랫폼] 입니다.
+### <span style='background-color:#D0E4FC'>모영은 영화검색을 통해 상영중인 근처 영화관을 찾아주는 [검색 플랫폼] 입니다.</span>
 
 영화검색을 통하여 상영중인 근처 영화관을 쉽게 찾고 같이 볼 사람도 모집할 수 있는 사이트를 만들자라는 기획으로 [영화 볼 사람 **모영**] 프로젝트를 시작하게 되었습니다.
 
@@ -12,8 +12,10 @@
 
 ---
 
-## 기술 스택 & 툴
+## 📁<span style='background-color:black; color:white'>기술 스택 & 툴</span>
 
-React, JavaScript, TypeScript, Axios, Styled-Components, Vite, React-hook-form, Redux, ESlint, Prettier, AWS-S3
+React, JavaScript, TypeScript, Styled-Components, Vite, Axios, Redux, ESlint, Prettier, React-hook-form, React-router
+
+<img src='/images/projects/moyoung/readmemd/skill.png' alt='기술스택' />
 
 ---

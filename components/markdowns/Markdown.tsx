@@ -1,6 +1,9 @@
 import React from "react"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
+// xss공격 취약 html문법 허용시
+import rehypeRaw from "rehype-raw"
+// import rehypeSanitize from "rehype-sanitize"
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter"
 import { dark } from "react-syntax-highlighter/dist/cjs/styles/prism"
 import Image from "next/image"
@@ -20,6 +23,7 @@ function Markdown({ text }: Props) {
   return (
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
+      rehypePlugins={[rehypeRaw]}
       components={{
         // 코드를 어떻게 표현할지에 대한 내용
         code({ inline, className, children, ...props }: CodeProps) {
@@ -39,8 +43,9 @@ function Markdown({ text }: Props) {
           )
         },
         // nextjs의 경우 img를 Image 컴포넌트로 바꿔줌
-        img: image => <Image src={image.src || ""} alt={image.alt || ""} width={300} height={250} />,
+        img: image => <Image src={image.src || ""} alt={image.alt || ""} width={500} height={250} />,
       }}
+      className={"md-img"}
     >
       {text}
     </ReactMarkdown>

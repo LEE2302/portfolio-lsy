@@ -1,6 +1,6 @@
 # 📌 프로젝트 소개 & 설명
 
-### [포트폴리오] 용도로 제작한 웹사이트입니다.
+### <span style='background-color:black; color:white'>[포트폴리오] 용도로 제작한 웹사이트입니다.</span>
 
 이번 포트폴리오 프로젝트에는 최근 강의를 들으며 공부중인 **NEXT.js**와 **Tailwind CSS**를 사용해 보았습니다.
 
@@ -11,8 +11,10 @@
 
 ---
 
-## 기술 스택 & 툴
+## 📁<span style='background-color:black; color:white'>기술 스택 & 툴</span>
 
 React, Next.js, JavaScript, TypeScript, TailWind-CSS, Vercel
+
+<img src='/images/projects/portfolio/readmemd/skill.png' alt='기술스택' />
 
 ---
