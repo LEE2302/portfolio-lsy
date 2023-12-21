@@ -7,7 +7,7 @@
 - 팀원: 프론트엔드 3명, 백엔드 3명
 
 **[간단 설명]**
-**Git**을 이용하여 다른 사람들과 협업을 진행하였고, **Vite**를 사용하여 **빠른 개발 환경**을 경험하였으며, **React**환경에서 사용하기 좋은 **Styled-components**를 사용하여 편리함을 느꼈고, 왜 **Typescript**를 사용하는지에 대해 알게된 프로젝트입니다.
+<span style='color:#16a34a'>Git</span>을 이용하여 다른 사람들과 협업을 진행하였고, <span style='color:#16a34a'>Vite</span>를 사용하여 <span style='color:#16a34a'>빠른 개발 환경</span>을 경험하였으며, <span style='color:#16a34a'>React</span>환경에서 사용하기 좋은 <span style='color:#16a34a'>Styled-components</span>를 사용하여 편리함을 느꼈고, 왜 <span style='color:#16a34a'>Typescript</span>를 사용하는지에 대해 알게된 프로젝트입니다.
 
 ---
 
