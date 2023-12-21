@@ -1,12 +1,12 @@
-# 🎥 PortFolio - 프론트엔드 이세영
+# 🎥 <span style='background-color:black; color:white'>PortFolio - 프론트엔드 이세영
 
-## 🔗 Deployment URL
+## 🔗 <span style='background-color:black; color:white'>Deployment URL
 
 - [배포링크](https://portfolio-lsy.vercel.app/)
 - [회고 블로그](https://velog.io/@lee2302/series/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4)
 - [GitHub](https://github.com/LEE2302/portfolio-lsy)
 
-## 📌 담당 페이지
+## 📌 <span style='background-color:black; color:white'>담당 페이지
 
 - 홈화면
   - Navbar
@@ -14,7 +14,7 @@
   - Skills
   - Projects
 
-## 📌 핵심 기능
+## 📌 <span style='background-color:black; color:white'>핵심 기능
 
 - 맨 위에 고정함으로 유저가 보다 편리하게 사용할 수 있도록 했습니다.
 - 스크롤이 맨위에 위치할 경우 배경색은 투명이 되고, 스크롤로 내리면 색을 주어 유저로서 편리하게 볼 수 있도록 하였습니다.
@@ -25,9 +25,9 @@
 - Markdown파일(.md)을 React-markdown을 사용하여 깔끔하게 표현하였습니다.
 - potal을 이용하여 Modal을 구현하였습니다.
 
-## ⭐️<span style="background-color:black; color: white">Meaning<span> 
+## ⭐️<span style="background-color:black; color: white">Meaning<span>
 
-- ### <span style="background-color:#fff5b1">Next.js통해 첫 프로젝트에 사용해보고 학습하였습니다.<span> 
+- ### <span style="background-color:#fff5b1">Next.js통해 첫 프로젝트에 사용해보고 학습하였습니다.<span>
 
 강의를 듣고 처음 나의 코드에 적용을 해보는 시간이였습니다. 동작하는 방식이 React와 다르다 보니 헷갈렸지만 적응을 하고 이해를 하니 크게 어려움이 없었고, Next.js에 최적화 면에서 매우 뛰어나다는 것을 알게되었습니다. 또한 CSR과 SSR을 지원하면서 SEO를 위한 렌더링이 지원한다는것에 신기했습니다. 포트폴리오 사이트는 웹 페이지가 하나밖에 없기 때문에 서버에 요청을 하지 않아 SSR과 SSG같은 기능은 사용하지 않습니다. 하지만 Next.js문법을 학습하는 목적에 있었고, 다른 최적화 기능을 사용하며 배울 수 있었습니다. 더 학습을 통하여 SSR과 SSG기능도 사용하며 Next.js 위대함을 느껴보고 싶습니다.
 
