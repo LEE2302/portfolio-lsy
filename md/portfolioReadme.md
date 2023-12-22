@@ -37,7 +37,7 @@ Tailwind.CSS는 Next.js와 사용이 많이 된다하여 학습목적으로 사�
 
 - ### <span style='background-color:#dcffe4'>Vercel배포로 쉽게되는 자동 배포를 경험했습니다.</span>
 
-Vercel로 배포를 처음 진행했습니다. 이전 까지는 Amazon-S3와 Github-Action을 사용하여 배포를 진행하였는데, 너무 쉽게 Github-Repository와 Vercel을 연결만 하면 수정사항 push시 인식하고 자동으로 Build하여 배포를 해준다는 정말 큰 편리함이 있었습니다.
+Vercel로 배포를 처음 진행했습니다. 이전까지는 Amazon-S3와 Github-Action을 사용하여 배포를 진행하였는데, 너무 쉽게 Github-Repository와 Vercel을 연결만 하면 수정 사항 push 시 인식하고 자동으로 Build하여 배포를 해준다는 정말 큰 편리함이 있었습니다.
 
 - ### <span style='background-color:#f5f0ff'>React-markdown을 사용하여 Project를 꾸몄습니다.</span>
 
