@@ -3,8 +3,8 @@ module.exports = {
   semi: false,
   useTabs: false,
   tabWidth: 2,
-  trailingComma: 'all',
+  trailingComma: "all",
   printWidth: 120,
   bracketSpacing: true,
-  arrowParens: 'avoid',
+  arrowParens: "avoid",
 }
