@@ -38,7 +38,7 @@ export const iconArr = [
     icon: <SiNotion size="50" />,
     name: "노션 이력서",
     value: ["제가 개발자가 되기 위해 걸어온 이력을 기록한 문서입니다."],
-    urlPath: "https://sulky-sage-5d2.notion.site/87478bd76dc1410b8477a49c583626ca?pvs=4",
+    urlPath: "https://sulky-sage-5d2.notion.site/05124728650e4845b56dee6b297ebe22?pvs=4",
     path: "노션 이력서",
     des: (
       <p>
