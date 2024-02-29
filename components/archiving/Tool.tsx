@@ -23,7 +23,7 @@ function Tool() {
             <div className="lg:text-lg xl:text-xl mt-5">{el.des}</div>
             <ul className="mt-5 pl-5">
               {el.value.map(el => (
-                <li key={el} className=" lg:text-lg xl:text-xl text-lg mb-2 list-disc font-sanskr font-normal">
+                <li key={el} className=" lg:text-[16px] xl:text-xl text-sm mb-2 list-disc font-sanskr font-normal">
                   {el}
                 </li>
               ))}
