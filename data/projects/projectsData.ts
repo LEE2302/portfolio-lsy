@@ -21,7 +21,7 @@ export const myEcoStoryReadme = getProjectMd("myecostoryReadme.md")
 
 export const ecoLinkArr = [
   {
-    link: "https://velog.io/@lee2302/%EB%A9%94%EC%9D%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0",
+    link: "https://velog.io/@lee2302/series/%EB%82%98%EB%A7%8C%EC%9D%98-%EC%B9%9C%ED%99%98%EA%B2%BD-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8",
     value: "회고 블로그",
   },
   {
@@ -58,7 +58,7 @@ export const moyoungReadme = getProjectMd("moyoungReadme.md")
 
 export const moyoungLinkArr = [
   {
-    link: "https://velog.io/@lee2302/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0",
+    link: "https://velog.io/@lee2302/series/%ED%86%A0%EC%9D%B4%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8",
     value: "회고 블로그",
   },
   {
@@ -71,7 +71,7 @@ export const moyoungLinkArr = [
   },
 ]
 
-// 모영 데이터
+// 포트폴리오 데이터
 export const imagePortfolioArr = [
   "/images/projects/portfolio/pofol1.png",
   "/images/projects/portfolio/pofol2.png",
@@ -86,7 +86,7 @@ export const portfolioReadme = getProjectMd("portfolioReadme.md")
 
 export const portfolioLinkArr = [
   {
-    link: "https://velog.io/@lee2302/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4",
+    link: "https://velog.io/@lee2302/series/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4",
     value: "회고 블로그",
   },
   {
